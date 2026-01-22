@@ -12,7 +12,7 @@ int heldGold = int.Parse(Console.ReadLine());
 Console.WriteLine("I have a 'bronze sword' for sale for 15 gold coins.");
 Console.WriteLine("Do you wish to purchase it?");
 string doPurchaseSword = Console.ReadLine();
-if (doPurchaseSword == "yes")
+if (doPurchaseSword.ToLower() == "yes")
 {
     // 3a buy sword
     if (heldGold >= 15)
